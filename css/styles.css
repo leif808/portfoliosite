@@ -1,24 +1,124 @@
-/* Import fonts from css file */
-@import url(fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
-
-/* Start navigation */
-.header_area .main-menu .navbar .navbar-brand {
-    padding: 0 2rem 0 5rem;
+html, h1, h2, h3, h4, h5, h6, a {
+    font-family: "Roboto";
 }
 
-.header_area .main-menu .navbar {
-    padding: 1rem 20rem;
+/*Navbar*/
+.navbar { 
+    background:#FFD369;
 }
 
-.header_area .main-menu .nav-item .nav-link {
-    font-family: "Roboto", cursive;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 1.7rem;
-    color: black;
+.nav-link , .navbar-brand { 
+    color: #EEEEEE; 
+    cursor: pointer;
 }
-/* End navigation */
 
+.nav-link { 
+    margin-right: 1em !important;
+}
 
+.nav-link:hover { 
+    background: #EEEEEE; 
+    color: #FFD369; 
+}
+
+.navbar-collapse { 
+    justify-content: flex-end;
+}
+
+.navbar-toggler{  
+    background:#EEEEEE !important;
+}
+
+/*Header*/
+.header {
+    background-image: url('/img/Leif-Header.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;  
+}
+
+.description h1 {
+ color:#222831;
+}
+
+.description p {
+ color:#393E46;
+ font-size: 20px;
+ width: 50%;
+ line-height: 1.5;
+}
+
+.description button {
+ border:1px  solid #FFD369;
+ background:#FFD369;
+ color:#fff;
+}
+
+/*About*/
+.about {
+    padding: 1em;
+    position: relative;
+}
+
+.about h1 {
+    color:#FFD369;
+    margin: 2em;
+    text-align: center;
+}
+
+.about img {
+    height: 100%;
+       width: 100%;
+       border-radius: 50%
+}
+
+.about .desc {
+    padding: 2em;
+    border-left:4px solid #393E46;
+}
+
+.about .desc h3 {
+    color: #393E46;
+}
+
+.about .desc p {
+    line-height:2;
+    color:#888;
+}
+
+/*Portfolio*/
+.portfolio {
+    margin: 4em 0;
+    position: relative; 
+}
+
+.portfolio h1 {
+    color:#FFD369;
+    margin: 2em;
+    text-align: center;
+}
+   
+.portfolio img {
+     height: 15rem;
+     width: 100%;
+     margin: 1em;
+     
+}
