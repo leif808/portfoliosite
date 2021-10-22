@@ -2,6 +2,7 @@
 
 html, h1, h2, h3, h4, h5, h6, a {
     font-family: "Roboto";
+    scroll-behavior: smooth;
 }
 
 /*Navbar*/
@@ -10,7 +11,7 @@ html, h1, h2, h3, h4, h5, h6, a {
 }
 
 .nav-link , .navbar-brand { 
-    color: #EEEEEE; 
+    color: #fff; 
     cursor: pointer;
 }
 
@@ -57,12 +58,12 @@ html, h1, h2, h3, h4, h5, h6, a {
 
 .description h1 {
  color:#222831;
+ font-size: 80px;
 }
 
 .description p {
  color:#393E46;
- font-size: 20px;
- width: 50%;
+ font-size: 40px;
  line-height: 1.5;
 }
 
@@ -120,5 +121,33 @@ html, h1, h2, h3, h4, h5, h6, a {
      height: 15rem;
      width: 100%;
      margin: 1em;
+     border-color: #222831;
+     border-width: thin;
      
+}
+
+/*Contact*/
+.contact-form {
+    margin: 6em 0;
+    position: relative;  
+}
+   
+.contact-form h1 {
+    padding:2em 1px;
+    color: #FFD369; 
+}
+   
+.contact-form .right {
+    max-width: 600px;
+}
+   
+.contact-form .right .btn-secondary {
+    background:  #FFD369;
+    color: #fff;
+    border:0;
+}
+   
+.contact-form .right .form-control::placeholder {
+    color: #888;
+    font-size: 16px;
 }
