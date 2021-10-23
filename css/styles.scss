@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, h1, h2, h3, h4, h5, h6, a {
+    font-family: "Roboto";
+    scroll-behavior: smooth;
+}
+
+/*Navbar*/
+.navbar { 
+    background:#FFD369;
+}
+
+.nav-link , .navbar-brand { 
+    color: #fff; 
+    cursor: pointer;
+}
+
+.nav-link { 
+    margin-right: 1em !important;
+}
+
+.nav-link:hover { 
+    background: #EEEEEE; 
+    color: #FFD369; 
+}
+
+.navbar-collapse { 
+    justify-content: flex-end;
+}
+
+.navbar-toggler{  
+    background:#EEEEEE !important;
+}
+
+/*Header*/
+.header {
+    background-image: url('/img/Leif-Header.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+
+.description {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;  
+}
+
+.description h1 {
+ color:#222831;
+ font-size: 80px;
+}
+
+.description p {
+ color:#393E46;
+ font-size: 40px;
+ line-height: 1.5;
+}
+
+.description button {
+ border:1px  solid #FFD369;
+ background:#FFD369;
+ color:#fff;
+}
+
+/*About*/
+.about {
+    padding: 1em;
+    position: relative;
+}
+
+.about h1 {
+    color:#FFD369;
+    margin: 2em;
+    text-align: center;
+}
+
+.about img {
+    height: 100%;
+       width: 100%;
+       border-radius: 50%
+}
+
+.about .desc {
+    padding: 2em;
+    border-left:4px solid #393E46;
+}
+
+.about .desc h3 {
+    color: #393E46;
+}
+
+.about .desc p {
+    line-height:2;
+    color:#888;
+}
+
+/*Portfolio*/
+.portfolio {
+    margin: 4em 0;
+    position: relative; 
+}
+
+.portfolio h1 {
+    color:#FFD369;
+    margin: 2em;
+    text-align: center;
+}
+   
+.portfolio img {
+     height: 15rem;
+     width: 100%;
+     margin: 1em;
+}
+
+.portfolio p {
+    text-align: center;
+}
+
+/*Contact*/
+.contact-form {
+    margin: 6em 0;
+    position: relative;  
+}
+   
+.contact-form h1 {
+    padding:2em 1px;
+    color: #FFD369; 
+}
+   
+.contact-form .right {
+    max-width: 600px;
+}
+   
+.contact-form .right .btn-secondary {
+    background:  #FFD369;
+    color: #fff;
+    border:0;
+}
+   
+.contact-form .right .form-control::placeholder {
+    color: #888;
+    font-size: 16px;
+}
